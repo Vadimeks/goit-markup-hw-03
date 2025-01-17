@@ -1,0 +1,198 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #ffffff; /* Background color */
+  color: #434455; /* Text color */
+  font-style: normal;
+  margin: 0 auto; /* Center section horizontally */
+}
+a,
+button {
+  text-decoration: none; /* Remove underline from links */
+  color: #2e2f42; /* Default link color */
+  font-style: normal;
+  cursor: pointer;
+}
+li {
+  list-style-type: none; /* Remove default bullet points */
+}
+/* Header styles */
+/* .header-section  */
+/* Navigation styles */
+/* .header-nav  */
+/* logotype  */
+.header-logo {
+  font-family: "Raleway", sans-serif; /* Используем правильный шрифт */
+  font-size: 18px; /* Размер шрифта */
+  font-weight: 700; /* Жирный шрифт */
+  text-transform: uppercase; /* Текст в верхнем регистре */
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: #4d5ae5;
+}
+.logo-part {
+  color: #2e2f42; /* Цвет для "Studio" */
+}
+.header-logo:hover,
+.header-logo:focus,
+.logo-part:hover,
+.logo-part:focus {
+  color: #404bbf;
+}
+/* Navigation UL styles */
+/* .nav-list  */
+/* Navigation LI styles */
+/* .nav-items  */
+/* Navigation link styles */
+.nav-link {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  font-size: 16px; /* Font size */
+  font-weight: 500; /* Medium font weight */
+}
+.nav-items .nav-link:hover,
+.nav-items .nav-link:focus {
+  color: #404bbf;
+}
+/* Navigotion Address block */
+.nav-address {
+  font-style: normal;
+}
+/* Address section UL styles */
+/* .address-list  */
+/* Address section LI styles */
+.address-items {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+.address-link {
+  color: #434455;
+}
+.address-link:hover,
+.address-link:focus {
+  color: #404bbf;
+}
+/* Firts section styles */
+.first-section {
+  background-color: #2e2f42; /* Background color */
+}
+/* 1st section H1 styles */
+.header-one {
+  font-weight: 700; /* Bold text */
+  font-size: 56px; /* Font size */
+  color: #ffffff; /* Text color */
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+/* 1st section Button styles */
+.button {
+  font-weight: 500; /* Medium text */
+  font-size: 16px; /* Font size */
+  color: #ffffff; /* Text color */
+  background-color: #4d5ae5; /* Button background color */
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
+/* Button hover and focus styles */
+.button:hover,
+.button:focus {
+  background-color: #404bbf; /* Цвет фона кнопки при наведении или фокусе */
+}
+/* 2nd section About US */
+/* .about-section  */
+/*2nd section Hidden H2 header */
+/* .header-two  */
+/* .visual-hidden  */
+/* 2nd section UL styles */
+/* .about-list  */
+/* 2nd section LI styles */
+/* .about-items  */
+/* 2nd section H3 header styles */
+.header-three {
+  font-weight: 500;
+  font-size: 20px;
+  color: #2e2f42;
+  letter-spacing: 0.02em;
+  line-height: 1.2;
+}
+/* 2nd section Paragraph styles */
+.text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #434455;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+/* Third Section - Our Team  */
+.team-section {
+  background-color: #f4f4fd;
+}
+/* 3rd section H2 styles */
+.header-two {
+  font-weight: 700;
+  font-size: 36px;
+  color: #2e2f42;
+  line-height: 1.11; /* Высота строки равна высоте текста */
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  text-align: center;
+}
+/* 3rd section UL styles */
+/* .team-list  */
+/* 3rd section LI styles */
+.team-items {
+  background-color: #ffffff;
+}
+/* .team-section img  */
+/* .team-section  */
+/* .header-three  */
+/* .team-section  */
+/* .text  */
+/*4th Section - Portfolio */
+/* .portfolio-section  */
+/* portfolio H2 styles */
+.portfolio-section .header-two {
+  text-align: center;
+}
+/* 4th section portfolio UL styles */
+/* .portfolio-list  */
+/* 4th section portfolio LI styles */
+/* .portfolio-items  */
+/* 4th section portfolio IMG styles */
+/* .portfolio-section img  */
+/* 4th section portfolio H3 styles */
+/* .portfolio-section .header-three  */
+/* 4th section portfolio Text styles */
+/* .portfolio-section .text  */
+/* Footer section */
+.footer-section {
+  background: #2e2f42;
+}
+.footer-logo {
+  font-family: "Raleway", sans-serif; /* Используем правильный шрифт */
+  font-size: 18px; /* Размер шрифта */
+  font-weight: 700; /* Жирный шрифт */
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: #4d5ae5;
+  text-transform: uppercase; /* Текст в верхнем регистре */
+}
+.footer-logo .logo-part {
+  color: #f4f4fd; /* Цвет для "Studio" */
+}
+.footer-logo:hover,
+.footer-logo:focus {
+  color: #404bbf; /* Hover and focus color */
+}
+.footer-section .logo-part:hover,
+.footer-section .logo-part:focus {
+  color: #404bbf; /* Hover and focus color */
+}
+.footer-section .text {
+  color: #f4f4fd;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
