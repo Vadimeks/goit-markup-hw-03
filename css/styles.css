@@ -3,7 +3,6 @@ body {
   background-color: #ffffff; /* Background color */
   color: #434455; /* Text color */
   font-style: normal;
-  margin: 0 auto; /* Center section horizontally */
 }
 a,
 button {
@@ -12,13 +11,33 @@ button {
   font-style: normal;
   cursor: pointer;
 }
-li {
+p {
+  margin: 0;
+}
+ul {
+  margin: 0;
+  padding-left: 0;
   list-style-type: none; /* Remove default bullet points */
 }
+img {
+  display: block;
+}
+.container {
+  max-width: 1440px;
+  padding: 0 0;
+  margin: 0 auto; /* Center section horizontally */
+}
 /* Header styles */
-/* .header-section  */
+.header-section .container {
+  display: flex; /* Flex container */
+  justify-content: space-between; /* Space between logo, nav, and address */
+  align-items: center;
+}
 /* Navigation styles */
-/* .header-nav  */
+.header-nav {
+  display: flex; /* Flex container for nav */
+}
+
 /* logotype  */
 .header-logo {
   font-family: "Raleway", sans-serif; /* Используем правильный шрифт */
@@ -28,6 +47,10 @@ li {
   line-height: 1.17;
   letter-spacing: 0.03em;
   color: #4d5ae5;
+  margin-right: 76px; /* Расстояние между логотипом и навигацией */
+  margin-left: 156px; /* Расстояние между логотипом и левым краем */
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .logo-part {
   color: #2e2f42; /* Цвет для "Studio" */
@@ -39,9 +62,13 @@ li {
   color: #404bbf;
 }
 /* Navigation UL styles */
-/* .nav-list  */
-/* Navigation LI styles */
-/* .nav-items  */
+.nav-list {
+  display: flex; /* Flex container for list */
+  gap: 40px; /* Space between each list item */
+  padding-top: 24px;
+  padding-bottom: 24px;
+  margin-right: 332px;
+}
 /* Navigation link styles */
 .nav-link {
   line-height: 1.5;
@@ -54,12 +81,20 @@ li {
 .nav-items .nav-link:focus {
   color: #404bbf;
 }
-/* Navigotion Address block */
+/* Navigation Address block */
 .nav-address {
+  display: flex;
   font-style: normal;
+  margin-right: 156px;
+  align-items: center;
 }
 /* Address section UL styles */
-/* .address-list  */
+.address-list {
+  display: flex; /* Гибкий контейнер для email и телефона */
+  gap: 40px; /* Space between each list item */
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
 /* Address section LI styles */
 .address-items {
   font-size: 16px;
@@ -77,6 +112,13 @@ li {
 .first-section {
   background-color: #2e2f42; /* Background color */
 }
+.first-section div.container {
+  padding: 188px 472px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 /* 1st section H1 styles */
 .header-one {
   font-weight: 700; /* Bold text */
@@ -85,6 +127,8 @@ li {
   line-height: 1.07;
   letter-spacing: 0.02em;
   text-align: center;
+  margin-bottom: 48px;
+  margin-top: 0;
 }
 /* 1st section Button styles */
 .button {
@@ -94,6 +138,10 @@ li {
   background-color: #4d5ae5; /* Button background color */
   line-height: 1.5;
   letter-spacing: 0.04em;
+  border: none;
+}
+div.container .button {
+  padding: 16px 32px;
 }
 /* Button hover and focus styles */
 .button:hover,
@@ -101,21 +149,34 @@ li {
   background-color: #404bbf; /* Цвет фона кнопки при наведении или фокусе */
 }
 /* 2nd section About US */
-/* .about-section  */
-/*2nd section Hidden H2 header */
-/* .header-two  */
-/* .visual-hidden  */
-/* 2nd section UL styles */
-/* .about-list  */
-/* 2nd section LI styles */
-/* .about-items  */
-/* 2nd section H3 header styles */
+.about-section {
+  padding: 120px 156px;
+}
+.about-list {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 24px;
+}
+.visual-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 .header-three {
   font-weight: 500;
   font-size: 20px;
   color: #2e2f42;
   letter-spacing: 0.02em;
   line-height: 1.2;
+  margin-bottom: 8px;
 }
 /* 2nd section Paragraph styles */
 .text {
@@ -129,8 +190,10 @@ li {
 /* Third Section - Our Team  */
 .team-section {
   background-color: #f4f4fd;
+  padding: 120px 156px;
 }
 /* 3rd section H2 styles */
+
 .header-two {
   font-weight: 700;
   font-size: 36px;
@@ -139,18 +202,31 @@ li {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   text-align: center;
+  margin-bottom: 72px;
+  margin-top: 0;
 }
 /* 3rd section UL styles */
-/* .team-list  */
-/* 3rd section LI styles */
+.team-list {
+  display: flex;
+  flex-direction: raw;
+  gap: 24px;
+}
 .team-items {
   background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
-/* .team-section img  */
-/* .team-section  */
-/* .header-three  */
-/* .team-section  */
-/* .text  */
+img .team-items {
+  margin-bottom: 32px;
+}
+.header-three .team-items {
+  margin-bottom: 8px;
+}
+.team-items .text {
+  padding-bottom: 32px;
+}
 /*4th Section - Portfolio */
 /* .portfolio-section  */
 /* portfolio H2 styles */
