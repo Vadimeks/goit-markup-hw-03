@@ -128,9 +128,9 @@ img {
 }
 /* 1st section H1 styles */
 .header-one {
-  font-weight: 700; /* Bold text */
-  font-size: 56px; /* Font size */
-  color: #ffffff; /* Text color */
+  font-weight: 700;
+  font-size: 56px;
+  color: #ffffff;
   line-height: 1.07;
   letter-spacing: 0.02em;
   text-align: center;
@@ -140,10 +140,10 @@ img {
 }
 /* 1st section Button styles */
 .button {
-  font-weight: 500; /* Medium text */
-  font-size: 16px; /* Font size */
-  color: #ffffff; /* Text color */
-  background-color: #4d5ae5; /* Button background color */
+  font-weight: 500;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #4d5ae5;
   line-height: 1.5;
   letter-spacing: 0.04em;
   border: none;
@@ -155,11 +155,11 @@ img {
 /* Button hover and focus styles */
 .button:hover,
 .button:focus {
-  background-color: #404bbf; /* Цвет фона кнопки при наведении или фокусе */
+  background-color: #404bbf;
 }
 /* 2nd section About US */
 .about-section {
-  padding: 120px 156px;
+  padding: 120px 0;
 }
 .about-list {
   display: flex;
@@ -167,7 +167,7 @@ img {
   flex-direction: row;
   gap: 24px;
 }
-.visual-hidden {
+.visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -186,6 +186,9 @@ img {
   letter-spacing: 0.02em;
   line-height: 1.2;
   margin-bottom: 8px;
+}
+.about-items {
+  width: calc((100% - 72px) / 4);
 }
 /* 2nd section Paragraph styles */
 .text {
