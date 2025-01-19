@@ -202,7 +202,7 @@ img {
 /* Third Section - Our Team  */
 .team-section {
   background-color: #f4f4fd;
-  padding: 120px 156px;
+  padding: 120px 0;
 }
 /* 3rd section H2 styles */
 
@@ -220,7 +220,7 @@ img {
 /* 3rd section UL styles */
 .team-list {
   display: flex;
-  flex-direction: raw;
+  align-items: center;
   gap: 24px;
 }
 .team-items {
@@ -229,15 +229,18 @@ img {
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  width: calc((100% - 72px) / 4);
+  border-radius: 0px 0px 4px 4px;
 }
-img .team-items {
-  margin-bottom: 32px;
+.team-description {
+  padding: 32px 0;
 }
-.header-three .team-items {
+.team-description .header-three {
+  text-align: center;
   margin-bottom: 8px;
 }
-.team-items .text {
-  padding-bottom: 32px;
+.team-description .text {
+  text-align: center;
 }
 /*4th Section - Portfolio */
 /* .portfolio-section  */
