@@ -243,24 +243,36 @@ img {
   text-align: center;
 }
 /*4th Section - Portfolio */
-/* .portfolio-section  */
+.portfolio-section {
+  padding: 120px 0;
+}
 /* portfolio H2 styles */
 .portfolio-section .header-two {
   text-align: center;
 }
 /* 4th section portfolio UL styles */
-/* .portfolio-list  */
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+}
 /* 4th section portfolio LI styles */
-/* .portfolio-items  */
-/* 4th section portfolio IMG styles */
-/* .portfolio-section img  */
-/* 4th section portfolio H3 styles */
-/* .portfolio-section .header-three  */
-/* 4th section portfolio Text styles */
-/* .portfolio-section .text  */
+.portfolio-items {
+  width: calc((100% - 48px) / 3);
+}
+.product-descr {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+}
+.product-descr .header-three {
+  margin-bottom: 8px;
+}
 /* Footer section */
 .footer-section {
   background: #2e2f42;
+  padding: 100px 0;
 }
 .footer-logo {
   font-family: "Raleway", sans-serif; /* Используем правильный шрифт */
@@ -270,6 +282,8 @@ img {
   letter-spacing: 0.03em;
   color: #4d5ae5;
   text-transform: uppercase; /* Текст в верхнем регистре */
+  display: inline-block;
+  margin-bottom: 16px;
 }
 .footer-logo .logo-part {
   color: #f4f4fd; /* Цвет для "Studio" */
