@@ -118,12 +118,11 @@ img {
 }
 /* Firts section styles */
 .first-section {
-  background-color: #2e2f42; /* Background color */
+  background-color: #2e2f42;
+  padding: 188px 0;
 }
 .first-section div.container {
-  padding: 188px 472px;
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
 }
@@ -137,6 +136,7 @@ img {
   text-align: center;
   margin-bottom: 48px;
   margin-top: 0;
+  max-width: 496px;
 }
 /* 1st section Button styles */
 .button {
@@ -147,10 +147,11 @@ img {
   line-height: 1.5;
   letter-spacing: 0.04em;
   border: none;
-}
-div.container .button {
+  min-width: 169px;
+  border-radius: 4px;
   padding: 16px 32px;
 }
+
 /* Button hover and focus styles */
 .button:hover,
 .button:focus {
