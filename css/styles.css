@@ -1,99 +1,105 @@
 body {
   font-family: "Roboto", sans-serif;
-  background-color: #ffffff; /* Background color */
-  color: #434455; /* Text color */
+  background-color: #ffffff;
+  color: #434455;
   font-style: normal;
 }
 a,
 button {
-  text-decoration: none; /* Remove underline from links */
-  color: #2e2f42; /* Default link color */
+  text-decoration: none;
+  color: #2e2f42;
   font-style: normal;
   cursor: pointer;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
 p {
   margin: 0;
 }
-ul {
+ul,
+ol {
   margin: 0;
-  padding-left: 0;
-  list-style-type: none; /* Remove default bullet points */
+  padding: 0;
+  list-style-type: none;
 }
 img {
   display: block;
 }
 .container {
-  max-width: 1440px;
-  padding: 0 0;
-  margin: 0 auto; /* Center section horizontally */
+  max-width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
-/* Header styles */
-.header-section .container {
-  display: flex; /* Flex container */
-  justify-content: space-between; /* Space between logo, nav, and address */
+/* header */
+.header-section {
+  border-bottom: 1px solid #e7e9fc;
+}
+.header-container {
+  display: flex;
   align-items: center;
 }
-/* Navigation styles */
 .header-nav {
-  display: flex; /* Flex container for nav */
+  display: flex;
+  align-items: center;
 }
 
-/* logotype  */
-.header-logo {
-  font-family: "Raleway", sans-serif; /* Используем правильный шрифт */
-  font-size: 18px; /* Размер шрифта */
-  font-weight: 700; /* Жирный шрифт */
-  text-transform: uppercase; /* Текст в верхнем регистре */
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
   line-height: 1.17;
   letter-spacing: 0.03em;
   color: #4d5ae5;
-  margin-right: 76px; /* Расстояние между логотипом и навигацией */
-  margin-left: 156px; /* Расстояние между логотипом и левым краем */
-  padding-top: 24px;
-  padding-bottom: 24px;
+}
+.header-logo {
+  padding: 24px 0;
+  margin-right: 76px;
 }
 .logo-part {
-  color: #2e2f42; /* Цвет для "Studio" */
+  color: #2e2f42;
 }
-.header-logo:hover,
-.header-logo:focus,
+.logo:hover,
+.logo:focus,
 .logo-part:hover,
 .logo-part:focus {
   color: #404bbf;
 }
-/* Navigation UL styles */
+
 .nav-list {
-  display: flex; /* Flex container for list */
-  gap: 40px; /* Space between each list item */
-  padding-top: 24px;
-  padding-bottom: 24px;
-  margin-right: 332px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
 }
-/* Navigation link styles */
+
 .nav-link {
+  display: block;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  font-size: 16px; /* Font size */
-  font-weight: 500; /* Medium font weight */
+  font-size: 16px;
+  font-weight: 500;
+  padding: 24px 0;
 }
 .nav-items .nav-link:hover,
 .nav-items .nav-link:focus {
   color: #404bbf;
 }
-/* Navigation Address block */
+
 .nav-address {
   display: flex;
-  font-style: normal;
-  margin-right: 156px;
   align-items: center;
+  font-style: normal;
+  margin-left: auto;
 }
-/* Address section UL styles */
 .address-list {
-  display: flex; /* Гибкий контейнер для email и телефона */
-  gap: 40px; /* Space between each list item */
-  padding-top: 24px;
-  padding-bottom: 24px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
 }
 /* Address section LI styles */
 .address-items {
@@ -102,7 +108,9 @@ img {
   letter-spacing: 0.02em;
 }
 .address-link {
+  display: block;
   color: #434455;
+  padding: 24px 0;
 }
 .address-link:hover,
 .address-link:focus {
